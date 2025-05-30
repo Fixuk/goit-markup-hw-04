@@ -204,7 +204,6 @@ h3,
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #2e2f42;
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -401,7 +400,17 @@ h3,
   overflow: hidden;
 }
 
-.portfolio-overlay {
+.portfolio-item:hover .portfolio-item {
+  transform: translateY(0);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover .overlay-text {
+  transform: translateY(0);
+}
+
+.overlay-text {
   position: absolute;
   top: 0;
   left: 0;
@@ -419,24 +428,9 @@ h3,
   justify-content: flex-start;
   transform: translateY(100%);
   transition: transform 250ms ease-in-out;
-}
-
-.portfolio-item:hover .portfolio-overlay {
-  transform: translateY(0);
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
-
-.portfolio-item:hover .overlay-text {
-  transform: translateY(0);
-}
-
-.overlay-text {
   margin: 0;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
   text-align: left;
+  overflow: hidden;
 }
 
 /* ================== FOOTER ================== */
