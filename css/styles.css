@@ -482,6 +482,7 @@ h3,
   font-size: 16px;
   line-height: 1.5;
   color: #ffffff;
+  letter-spacing: 0.02em;
 }
 
 .team-icons-link.footer:hover,
@@ -491,5 +492,5 @@ h3,
 
 .team-icons-list.footer {
   display: flex;
-  gap: 24px;
+  gap: 16px;
 }
